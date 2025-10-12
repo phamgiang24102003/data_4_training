@@ -1,0 +1,15 @@
+[globcfg]
+base_address = 0
+data_width = 32
+address_width = 32
+register_reset = sync_pos
+address_increment = none
+address_alignment = data_width
+force_name_case = none
+regmap_path = regs_uart.yaml
+
+[v_module]
+path = hw/regs_uart.v
+read_filler = 0
+interface = lb
+generator = Verilog
